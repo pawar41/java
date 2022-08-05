@@ -9,13 +9,13 @@ on:
 jobs:
 
   test:
-    name: Unit Test
+    name: Java programmes
     runs-on: ubuntu-18.04
 
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
         with:
-          distribution: 'temurin' # See 'Supported distributions' for available options
+          distribution: 'temurin'
           java-version: '17'
       - run: ./runner.sh
