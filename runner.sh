@@ -4,4 +4,5 @@ do
     echo $FILE
     java $FILE
     echo "---------"
-done
+done 
+# up
