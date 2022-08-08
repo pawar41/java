@@ -2,7 +2,7 @@ for FILE in programmes/*.java
 do 
     echo ""
     echo "---------"
-    echo $FILE
+    echo $(basename $(basename $FILE programmes/) .java)
     echo "--------"
     javac $FILE
     cd programmes
